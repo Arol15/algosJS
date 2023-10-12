@@ -6,17 +6,20 @@ function maxProfit(prices) {
 
   while (rightPointer < prices.length) {
     if (prices[rightPointer] > prices[leftPointer]) {
-      maxProfit = prices[rightPointer] - prices[leftPointer];
-      console.log(maxProfit);
+      //1 and 7
+      currentProfit = prices[rightPointer] - prices[leftPointer]; //4
+      maxProfit = Math.max(currentProfit, maxProfit);
+      // console.log(maxProfit);
       rightPointer++;
     } else {
+      leftPointer = rightPointer;
       rightPointer++;
-      leftPointer++;
     }
   }
 
   return maxProfit;
 }
 
-console.log(maxProfit([7, 1, 5, 3, 6, 4])); //4
-// console.log(maxProfit([7, 6, 4, 3, 1])); //0
+console.log(maxProfit([7, 1, 5, 3, 6, 4])); //5
+console.log(maxProfit([7, 4, 5, 3, 6, 19])); //16
+console.log(maxProfit([7, 6, 4, 3, 1])); //0
