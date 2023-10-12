@@ -7,7 +7,7 @@ function maxProfit(prices) {
   while (rightPointer < prices.length) {
     if (prices[rightPointer] > prices[leftPointer]) {
       maxProfit = prices[rightPointer] - prices[leftPointer];
-      // console.log(maxProfit);
+      console.log(maxProfit);
       rightPointer++;
     } else {
       rightPointer++;
@@ -19,4 +19,4 @@ function maxProfit(prices) {
 }
 
 console.log(maxProfit([7, 1, 5, 3, 6, 4])); //4
-console.log(maxProfit([7, 6, 4, 3, 1])); //0
+// console.log(maxProfit([7, 6, 4, 3, 1])); //0
