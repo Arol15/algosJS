@@ -28,4 +28,5 @@ function topKFrequent(nums, k) {
 //time - O n logn because of the sort
 //space o(n)
 
-console.log(topKFrequent([1, 1, 1, 2, 2, 3, 3, 7, 7, 7, 7], 2));
+console.log(topKFrequent([1, 1, 1, 2, 2, 3], 2));
+console.log(topKFrequent([1, 1, 1, 2, 2, 3, 3, 3, 7, 7, 7, 7], 3));
