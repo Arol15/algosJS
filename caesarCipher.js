@@ -26,5 +26,25 @@ function caesarCipher(string, k) {
   return result.join("");
 }
 
-console.log(caesarCipher("xyz", 20)); //rst
-console.log(caesarCipher("abc", 2)); //cde
+function caesarCipher1(string, k) {
+  const alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+  const result = [];
+  const obj = {};
+  for (let i = 0; i < alphabet.length; i++) {
+    if (!obj[i]) {
+      obj[alphabet[i]] = i;
+    }
+  }
+
+  for (let s of string) {
+    let newKey = (obj[s] + k) % alphabet.length;
+    // console.log(newKey);
+    result.push(alphabet.charAt(newKey));
+  }
+
+  return result.join("");
+}
+
+console.log(caesarCipher1("xyz", 20)); //rst
+console.log(caesarCipher1("abcd", 2)); //cde
