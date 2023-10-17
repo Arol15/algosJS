@@ -8,13 +8,15 @@ You can assume numDigits will always be less than the length of number and great
 */
 
 function bestDigits(num, numDigits) {
-  const stack = [];
+  // 462839 //2
+  const stack = []; // 68
 
   for (let n of num) {
+    //8
     while (
       numDigits > 0 &&
       stack.length > 0 &&
-      Number(n) > stack[stack.length - 1]
+      Number(n) > stack[stack.length - 1] // 6 > 4???
     ) {
       stack.pop();
       numDigits -= 1;
@@ -30,4 +32,6 @@ function bestDigits(num, numDigits) {
 }
 
 console.log(bestDigits("462839", 2)); //6839
+console.log(bestDigits("462839", 3)); //839
 console.log(bestDigits("543210", 2)); //5432
+console.log(bestDigits("543210", 4)); //54
