@@ -1,3 +1,5 @@
+//medium - merge intervals on leetcode
+
 function mergeOverlappingIntervals(intervals) {}
 
 console.log(
