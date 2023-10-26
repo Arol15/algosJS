@@ -28,3 +28,17 @@ function classPhotos(redShirts, blueShirts) {
 
 console.log(classPhotos([5, 8, 1, 3, 14], [6, 9, 2, 4, 5])); //true
 // console.log(classPhotos());
+
+// def classPhotos(redShirtHeights, blueShirtHeights):
+//     # Write your code here.
+//     redShirtHeights.sort(reverse=True)
+//     blueShirtHeights.sort(reverse=True)
+
+//     shirtColorInFirstRow = "RED" if redShirtHeights[0] < blueShirtHeights[0] else "BLUE"
+
+//     for idx in range(len(redShirtHeights)):
+//       if shirtColorInFirstRow == "RED":
+//         if redShirtHeights[idx] >= blueShirtHeights[idx]:
+//           return False
+//       elif shirtColorInFirstRow == "BLUE":
+//         if blueShirtHeights[idx] >= redS
