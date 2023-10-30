@@ -26,7 +26,7 @@ function minWaitingTime(queries) {
     currentSum += queries[i] 
     times.push(currentSum)  
   }
-  console.log(times)
+  // console.log(times)
   
   return times.reduce((el, acc) => {return el + acc}, 0)
 
