@@ -43,3 +43,4 @@ function tandemBycicle(redShirtSpeeds, blueShirtSpeeds, fastest) {
 }
 
 console.log(tandemBycicle([5, 5, 3, 9, 2], [3, 6, 7, 2, 1], true)) //32
+console.log(tandemBycicle([3, 3, 4, 6, 1, 2], [1, 2, 1, 9, 12, 3], false)) //30 
