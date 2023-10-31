@@ -3,6 +3,16 @@ function arrayOfProducts(numbers) {
   const result = [];
 
   let currentIndex = 0;
+  while (currentIndex < numbers.length) {
+    let currentSum = 1; 
+    for (let i = 0; i < numbers.length; i++) {
+      if (i !== currentIndex) {
+        currentSum *= numbers[i]
+      }
+    }
+    result.push(currentSum)
+    currentIndex++
+  }
 
   return result;
 }
